@@ -1,25 +1,35 @@
+/*********** Base styles ***********/
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
-/************* Base styles *************/
+body {
+  font-family: "Times New Roman", Times, serif;
+}
 h1.head {
 	margin-bottom: 15px;
 	text-align: center;
   font-size: 250%;
 }
+p {
+  margin-top: 0;
+  clear: right;
+}
+
+/* Clear floats after the columns **/
 .row:after {
   /*content: "";
   display: table;*/
   clear: both;
 }
+
+/******** Section color ************/
 .a {
-  background: aquamarine;
+  background: #3CB371;
 }
 .b {
-  background: lightgoldenrodyellow;
+  background: burlywood;
 }
 .c {
   background: lightcoral;
@@ -29,12 +39,38 @@ h1.head {
 .row {
 	width: 100%;
 }
+
 /********** Section Title ************/
-
-
-/*section.tile {5px, 27px
-	position: relative;
-}*/
+h1.abs {
+  position: relative;
+  float: right;
+  bottom: 17px;
+  left: 17px;
+  padding: 5px;
+  text-align: center;
+  border: 2px solid black;
+  background-color: #90EE90;
+}
+h1.ab {
+  position: relative;
+  float: right;
+  bottom: 17px;
+  left: 17px;
+  padding: 5px;
+  text-align: center;
+  border: 2px solid black;
+  background-color: bisque;
+}
+h1.ac {
+  position: relative;
+  float: right;
+  bottom: 17px;
+  left: 17px;
+  padding: 5px;
+  text-align: center;
+  border: 2px solid black;
+  background-color: #FFA07A;
+}
 
 /********** desktop only *************/
 @media (min-width: 992px) {
